@@ -223,24 +223,37 @@ footer {
   border-top: 1px solid var(--border);
 }
 
-@media (max-width: 720px) {
-  .header-inner,
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
+/* Стани взаємодії */
+nav a,
+button,
+.card {
+  transition: 0.3s ease;
+}
 
-  .header-inner {
-    padding: 16px 0;
-  }
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(118, 87, 214, 0.2);
+}
 
-  .hero {
-    min-height: auto;
-    padding-top: 40px;
-  }
+/* Оформлення таблиці */
+tbody tr:nth-child(even) {
+  background: var(--background);
+}
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
+/* Мультимедійні елементи */
+video {
+  width: 100%;
+}
+
+.media-flex {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.media-flex .card {
+  flex: 1;
 }
