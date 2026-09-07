@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Навчальний мінісайт Юліани Лук’янової про перші кроки у веброзробці."
+  >
+  <title>Мій перший HTML-сайт</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">YL</a>
+
+      <nav aria-label="Головна навігація">
+        <a class="active" href="index.html">Головна</a>
+        <a href="pages/about.html">Про мене</a>
+        <a href="pages/contact.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="kicker">Практична робота №3</p>
+        <h1>Мій перший HTML-сайт</h1>
+
+        <p>
+          Вітаю! Мене звати <strong>Юліана</strong>, і це мій перший
+          навчальний мінісайт.
+        </p>
+
+        <p>
+          Тут я практикую структуру HTML5, семантичні теги, таблиці,
+          форми та роботу з медіа.
+        </p>
+
+        <p>
+          Найцікавіше для мене — бачити, як звичайний код
+          <em>перетворюється на справжню вебсторінку</em>.
+        </p>
+
+        <button id="demo-button" type="button">Натисни мене</button>
+      </div>
+
+      <figure>
+        <img
+          src="assets/img/html5-logo.svg"
+          alt="Логотип HTML5"
+          width="240"
+          height="240"
+        >
+        <figcaption>HTML5 — основа структури вебсторінки</figcaption>
+      </figure>
+    </section>
+
+    <section class="card">
+      <h2>Про цей сайт</h2>
+
+      <p>
+        Мінісайт складається з трьох сторінок зі спільною навігацією:
+        головної сторінки, інформації про мене та сторінки контактів.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Що використано</h2>
+
+        <ul>
+          <li>семантична структура HTML5;</li>
+          <li>зображення, списки та таблиця;</li>
+          <li>форма з HTML5-валідацією;</li>
+          <li>відео та аудіо.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>План роботи</h2>
+
+        <ol>
+          <li>Створити структуру сторінок.</li>
+          <li>Додати контент і навігацію.</li>
+          <li>Перевірити форму та медіа.</li>
+          <li>Опублікувати проєкт на GitHub.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Розклад навчання</h2>
+
+      <table>
+        <caption>Мій план роботи над веброзробкою</caption>
+
+        <thead>
+          <tr>
+            <th>День</th>
+            <th>Тема</th>
+            <th>Результат</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Понеділок</td>
+            <td>HTML</td>
+            <td>Структура сторінки</td>
+          </tr>
+          <tr>
+            <td>Середа</td>
+            <td>CSS</td>
+            <td>Оформлення сайту</td>
+          </tr>
+          <tr>
+            <td>П’ятниця</td>
+            <td>JavaScript</td>
+            <td>Інтерактивність</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Юліана Лук’янова</p>
+  </footer>
+</body>
+</html>
