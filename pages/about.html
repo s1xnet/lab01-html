@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Сторінка про авторку навчального HTML-сайту."
+  >
+  <title>Про мене</title>
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">YL</a>
+
+      <nav aria-label="Головна навігація">
+        <a href="../index.html">Головна</a>
+        <a class="active" href="about.html">Про мене</a>
+        <a href="contact.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="kicker">Про мене</p>
+        <h1>Привіт, я Юліана</h1>
+
+        <p>
+          Я навчаюся за спеціальністю «Інженерія програмного
+          забезпечення» та знайомлюся з веброзробкою.
+        </p>
+
+        <p>
+          На цій сторінці я додала HTML5-елементи для відтворення
+          відео й аудіо.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Моє демонстраційне відео</h2>
+      <p>Короткий відеоролик із квіткою.</p>
+
+      <video controls width="720" preload="metadata">
+        <source src="../assets/media/flower.mp4" type="video/mp4">
+        <source src="../assets/media/flower.webm" type="video/webm">
+
+        <p>
+          Ваш браузер не підтримує HTML-відео.
+          <a href="../assets/media/flower.mp4">Завантажити відео</a>.
+        </p>
+      </video>
+    </section>
+
+    <section class="card">
+      <h2>Мій демонстраційний аудіозапис</h2>
+      <p>Приклад відтворення аудіо засобами HTML5.</p>
+
+      <audio controls preload="metadata">
+        <source
+          src="../assets/media/t-rex-roar.mp3"
+          type="audio/mpeg"
+        >
+        <source
+          src="../assets/media/example.ogg"
+          type="audio/ogg"
+        >
+
+        <p>
+          Ваш браузер не підтримує цей аудіофайл.
+          <a href="../assets/media/t-rex-roar.mp3">
+            Завантажити аудіо
+          </a>.
+        </p>
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Юліана Лук’янова</p>
+  </footer>
+</body>
+</html>
