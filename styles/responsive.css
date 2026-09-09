@@ -8,6 +8,7 @@
 
   .header-inner {
     padding: 16px 0;
+    flex-wrap: wrap;
   }
 
   .hero {
@@ -18,8 +19,20 @@
   .grid {
     grid-template-columns: 1fr;
   }
+    .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
   nav {
+    display: none;
+    flex-basis: 100%;
     flex-direction: column;
+    padding-top: 12px;
+  }
+
+  nav.is-open {
+    display: flex;
   }
 
   .card {

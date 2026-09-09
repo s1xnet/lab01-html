@@ -11,7 +11,6 @@
 
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/responsive.css">
-  <script src="./scripts/app.js" defer></script>
 </head>
 
 <body>
@@ -19,10 +18,20 @@
     <div class="container header-inner">
       <a class="logo" href="index.html">YL</a>
 
-      <nav aria-label="Головна навігація">
-        <a class="active" href="index.html">Головна</a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+      Меню
+      </button>
+
+      <nav id="main-nav" aria-label="Головна навігація">
+        <a href="index.html">Головна</a>
         <a href="pages/about.html">Про мене</a>
         <a href="pages/contact.html">Контакти</a>
+        <button class="theme-toggle" type="button">Темна тема</button>
       </nav>
     </div>
   </header>
@@ -30,7 +39,7 @@
   <main class="container">
     <section class="hero">
       <div>
-        <p class="kicker">Практична робота №3</p>
+        <p class="kicker">Практична робота №7–8</p>
         <h1>Мій перший HTML-сайт</h1>
 
         <p>
@@ -97,8 +106,15 @@
 
     <section class="card">
       <h2>Розклад навчання</h2>
-
+      <label for="schedule-search">Пошук у розкладі:</label>
+       <input
+          class="filter-search"
+          type="search"
+          id="schedule-search"
+          placeholder="Введіть HTML, CSS або JavaScript"
+        >
       <table>
+        
         <caption>Мій план роботи над веброзробкою</caption>
 
         <thead>
@@ -128,10 +144,76 @@
         </tbody>
       </table>
     </section>
-  </main>
+      <section class="card">
+    <h2>Часті запитання</h2>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-button" type="button" aria-expanded="true">
+          Що я вивчаю?
+        </button>
+        <div class="accordion-content">
+          <p>Я вивчаю HTML, CSS та JavaScript.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button" type="button" aria-expanded="false">
+          Для чого створено цей сайт?
+        </button>
+        <div class="accordion-content" hidden>
+          <p>Сайт створено для практичного вивчення веброзробки.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button" type="button" aria-expanded="false">
+          Які сторінки є на сайті?
+        </button>
+        <div class="accordion-content" hidden>
+          <p>На сайті є головна сторінка, сторінка про мене та контакти.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+  <h2>Детальніше про сайт</h2>
+  <p>Відкрийте вікно, щоб переглянути коротку інформацію.</p>
+  <button class="open-modal" type="button">Відкрити деталі</button>
+</section>
+
+<div class="modal" id="site-modal" hidden>
+  <div class="modal-overlay" data-modal-close></div>
+
+  <div
+    class="modal-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <button
+      class="modal-close"
+      type="button"
+      data-modal-close
+      aria-label="Закрити"
+    >
+      ×
+    </button>
+
+    <h2 id="modal-title">Про мінісайт</h2>
+    <p>
+      Це навчальний багатосторінковий сайт з HTML, CSS та JavaScript.
+    </p>
+  </div>
+</div>
+</main>
 
   <footer>
-    <p>&copy; 2026 Юліана Лук’янова</p>
-  </footer>
+  <p>&copy; <span class="current-year"></span> Юліана Лук’янова</p>
+</footer>
+
+<button class="back-to-top" type="button" hidden>↑ Вгору</button>
+
+<script src="js/main.js" defer></script>
 </body>
 </html>

@@ -18,10 +18,20 @@
     <div class="container header-inner">
       <a class="logo" href="../index.html">YL</a>
 
-      <nav aria-label="Головна навігація">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Меню
+      </button>
+
+      <nav id="main-nav" aria-label="Головна навігація">
         <a href="../index.html">Головна</a>
         <a href="about.html">Про мене</a>
-        <a class="active" href="contact.html">Контакти</a>
+        <a href="contact.html">Контакти</a>
+        <button class="theme-toggle" type="button">Темна тема</button>
       </nav>
     </div>
   </header>
@@ -40,7 +50,7 @@
     </section>
 
     <section class="card">
-      <form action="#" method="get">
+      <form id="contact-form" action="#" method="get" novalidate>
         <h2>Форма зворотного зв’язку</h2>
 
         <div class="form-group">
@@ -53,6 +63,7 @@
             minlength="2"
             maxlength="30"
           >
+          <small class="field-error" id="name-error"></small>
         </div>
 
         <div class="form-group">
@@ -63,6 +74,7 @@
             type="email"
             required
           >
+          <small class="field-error" id="email-error"></small>
         </div>
 
         <div class="form-group">
@@ -120,6 +132,8 @@
             minlength="10"
             maxlength="500"
           ></textarea>
+          <small class="field-error" id="message-error"></small>
+          <small class="character-counter" id="message-counter">0 / 500</small>
         </div>
 
         <div class="form-group">
@@ -131,15 +145,21 @@
             >
             Погоджуюсь із правилами *
           </label>
+          <small class="field-error" id="agree-error"></small>
         </div>
 
         <button type="submit">Надіслати</button>
       </form>
+      <div class="form-success" id="form-success" hidden></div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Юліана Лук’янова</p>
+    <p>&copy; <span class="current-year"></span> Юліана Лук’янова</p>
   </footer>
+
+  <button class="back-to-top" type="button" hidden>↑ Вгору</button>
+
+<script src="../js/main.js" defer></script>
 </body>
 </html>
