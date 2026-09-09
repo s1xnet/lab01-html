@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Контактна форма навчального HTML-сайту."
+  >
+  <title>Каталог курсів</title>
+
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">YL</a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Меню
+      </button>
+
+      <nav id="main-nav" aria-label="Головна навігація">
+        <a href="../index.html">Головна</a>
+        <a href="about.html">Про мене</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contact.html">Контакти</a>
+        <button class="theme-toggle" type="button">Темна тема</button>
+      </nav>
+    </div>
+  </header>
+
+    <main class="container">
+        <section class="catalog-section">
+            <p class="kicker">Навчальні матеріали</p>
+            <h1>Каталог вебкурсів</h1>
+            <p>Обирайте курси для вивчення сучасної веброзробки.</p>
+
+            <div class="catalog-controls">
+                <input
+                    type="search"
+                    id="catalog-search"
+                    placeholder="Пошук курсу..."
+                    aria-label="Пошук курсу"
+                >
+
+                <select id="category-filter" aria-label="Фільтр за категорією">
+                    <option value="all">Усі категорії</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="tools">Інструменти</option>
+                </select>
+
+                <select id="catalog-sort" aria-label="Сортування">
+                    <option value="default">Без сортування</option>
+                    <option value="title-asc">За назвою</option>
+                    <option value="rating-desc">За рейтингом</option>
+                    <option value="duration-asc">За тривалістю</option>
+                </select>
+            </div>
+
+            <p id="loading-state" class="catalog-state">
+                Завантаження курсів...
+            </p>
+
+            <p id="error-state" class="catalog-state" hidden>
+                Не вдалося завантажити дані.
+            </p>
+
+            <p id="empty-state" class="catalog-state" hidden>
+                За вашим запитом нічого не знайдено.
+            </p>
+
+            <div id="catalog" class="catalog-grid" data-catalog></div>
+
+            <button id="load-more" class="button" type="button" hidden>
+                Показати ще
+            </button>
+        </section>
+
+        <div id="details-modal" class="modal" hidden>
+            <div class="modal-content">
+                <button
+                    id="details-close"
+                    class="modal-close"
+                    type="button"
+                    aria-label="Закрити"
+                >
+                    ×
+                </button>
+
+                <div id="details-content"></div>
+            </div>
+        </div>
+    </main>
+
+  <footer>
+    <p>&copy; <span class="current-year"></span> Юліана Лук’янова</p>
+  </footer>
+
+  <button class="back-to-top" type="button" hidden>↑ Вгору</button>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/catalog.js" defer></script>
+</body>
+</html>

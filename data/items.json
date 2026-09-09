@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "HTML Основи",
+    "category": "frontend",
+    "description": "Створення структури вебсторінок за допомогою HTML5.",
+    "level": "Початковий",
+    "duration": 6,
+    "rating": 4.7,
+    "featured": true,
+    "icon": "🌐"
+  },
+  {
+    "id": 2,
+    "title": "CSS Основи",
+    "category": "frontend",
+    "description": "Стилізація сторінок, кольори, шрифти та блокова модель.",
+    "level": "Початковий",
+    "duration": 8,
+    "rating": 4.6,
+    "featured": false,
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "title": "Flexbox",
+    "category": "frontend",
+    "description": "Створення гнучких та адаптивних макетів.",
+    "level": "Середній",
+    "duration": 5,
+    "rating": 4.8,
+    "featured": true,
+    "icon": "📐"
+  },
+  {
+    "id": 4,
+    "title": "CSS Grid",
+    "category": "frontend",
+    "description": "Побудова складних сіток для сучасних сайтів.",
+    "level": "Середній",
+    "duration": 7,
+    "rating": 4.9,
+    "featured": true,
+    "icon": "🧩"
+  },
+  {
+    "id": 5,
+    "title": "JavaScript Основи",
+    "category": "javascript",
+    "description": "Змінні, умови, цикли, функції та масиви.",
+    "level": "Початковий",
+    "duration": 12,
+    "rating": 4.9,
+    "featured": true,
+    "icon": "⚡"
+  },
+  {
+    "id": 6,
+    "title": "DOM та події",
+    "category": "javascript",
+    "description": "Керування елементами сторінки та обробка подій.",
+    "level": "Середній",
+    "duration": 9,
+    "rating": 4.8,
+    "featured": false,
+    "icon": "🖱️"
+  },
+  {
+    "id": 7,
+    "title": "Асинхронний JavaScript",
+    "category": "javascript",
+    "description": "Promise, async await, fetch та робота з JSON.",
+    "level": "Просунутий",
+    "duration": 10,
+    "rating": 4.9,
+    "featured": true,
+    "icon": "🔄"
+  },
+  {
+    "id": 8,
+    "title": "Git та GitHub",
+    "category": "tools",
+    "description": "Контроль версій, гілки, коміти та віддалені репозиторії.",
+    "level": "Початковий",
+    "duration": 6,
+    "rating": 4.7,
+    "featured": false,
+    "icon": "🐙"
+  },
+  {
+    "id": 9,
+    "title": "Адаптивний дизайн",
+    "category": "frontend",
+    "description": "Створення сайтів для телефонів, планшетів і комп’ютерів.",
+    "level": "Середній",
+    "duration": 8,
+    "rating": 4.8,
+    "featured": false,
+    "icon": "📱"
+  },
+  {
+    "id": 10,
+    "title": "VS Code для розробника",
+    "category": "tools",
+    "description": "Налаштування редактора та корисні інструменти розробки.",
+    "level": "Початковий",
+    "duration": 4,
+    "rating": 4.5,
+    "featured": false,
+    "icon": "💻"
+  }
+]

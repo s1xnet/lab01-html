@@ -47,4 +47,20 @@
   .media-flex {
     flex-direction: column;
   }
+
+    .catalog-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-actions {
+    flex-direction: column;
+  }
+
+  .catalog-actions button {
+    width: 100%;
+  }
 }
